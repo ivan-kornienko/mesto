@@ -1,11 +1,17 @@
 .header {
     max-width: 880px;
     width: 100%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     padding: 45px 0px 40px 0px;
     border-bottom: 1px solid #545454;
+}.header > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
 }
 
 

@@ -1,9 +1,11 @@
 .heading {
-    margin: 0px;
-    color: black;
-    max-width: 190px;
+  margin: 0px;
+  color: black;
+  max-width: 190px;
 
-    text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  -o-text-overflow: ellipsis;
+
+     text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
 }

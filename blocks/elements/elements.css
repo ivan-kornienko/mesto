@@ -1,7 +1,9 @@
 .elements {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
     /*grid-template-rows: repat(auto, minmax(360px,500px));*/
+    -ms-grid-rows: auto;
     grid-template-rows: auto;
     /*grid-auto-flow: min-content;*/
 
@@ -41,6 +43,7 @@
 
 @media screen and (max-width: 320px) {
     .elements {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 20px;
 

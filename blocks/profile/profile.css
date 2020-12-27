@@ -1,6 +1,9 @@
 .profile {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 120px 30px 336px 30px 1fr;
     grid-template-columns: 120px 336px 1fr;
+    -ms-grid-rows: auto;
     grid-template-rows: auto;
     gap: 30px;
 
@@ -8,6 +11,18 @@
     max-width: 880px;
 
     padding-top: 40px;
+    
+}.profile > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    
+}.profile > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    
+}.profile > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
     
 }
 
@@ -18,9 +33,16 @@
 
 @media screen and (max-width: 900px) {
     .profile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }}
 
 @media screen and (max-width: 790px) {
@@ -35,9 +57,16 @@
 
 @media screen and (max-width: 320px) {
     .profile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         
     

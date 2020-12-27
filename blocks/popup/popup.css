@@ -6,11 +6,18 @@
     top:0;
     left: 0;
 
+    display: -ms-grid;
+
     display: grid;
     grid-auto-columns: 40px 430px 40px;
+    -ms-grid-rows: 1fr 40px 330px 1fr;
     grid-template-rows: 1fr 40px 330px 1fr;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1;
 
 }
@@ -32,6 +39,7 @@
 @media screen and (max-width: 320px) {
     .popup {
         grid-auto-columns: fit-content(282px);
+        -ms-grid-rows: 1fr 13px 26px 13px 322px 13px 1fr;
         grid-template-rows: 1fr 26px 322px 1fr;
         gap: 13px;
         

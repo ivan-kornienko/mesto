@@ -1,10 +1,16 @@
 .footer {
     max-width: 880px;
     width: 100%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     padding: 66px 0px 60px 0px;
+}.footer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -30,4 +36,3 @@
         
     
 }} 
-

@@ -1,3 +1,4 @@
 .element__fovorite-button {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }

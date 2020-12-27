@@ -15,8 +15,15 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    -ms-grid-column: 2;
+
     grid-column: 2;
+    -ms-grid-row: 1;
     grid-row: 1;
+
+    -webkit-transition: opacity 0.5s ease;
+
+    -o-transition: opacity 0.5s ease;
 
     transition: opacity 0.5s ease;
     cursor: pointer;

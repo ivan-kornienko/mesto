@@ -4,8 +4,11 @@
     max-width: 150px;
     height: 50px;
     border: 2px solid white;
-    justify-self: end;
-    align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     background-image: url(./add.svg);
     background-size: 22px;
     background-position: center;
@@ -16,11 +19,17 @@
 
     cursor: pointer;
     
+    -webkit-transition: opacity 0.5s ease;
+    
+    -o-transition: opacity 0.5s ease;
+    
     transition: opacity 0.5s ease;
 
     outline: 0;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
 
 }
 

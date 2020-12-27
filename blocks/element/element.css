@@ -1,38 +1,45 @@
 .element {
-    max-width: 100%;
-    height: 360px;
-   /* --width: 282px;
-    max-width: var(--width);
-    height: calc(var(--width) * 1.28);*/
-    background-color: white;
-  border-radius: 10px;
+  max-width: 100%;
+  height: 360px;
+  background-color: white;
+border-radius: 10px;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+display: -ms-grid;
 
-  text-decoration: none;
+display: grid;
+-ms-grid-columns: 1fr;
+grid-template-columns: 1fr;
+-ms-grid-rows: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+
+text-decoration: none;
+}.element > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}.element > *:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
 }
 
 @media screen and (max-width: 900px) {
-  .element {
-    
-    
-    
+.element {
+  
+  
+  
 }}
 
 @media screen and (max-width: 700px) {
+.element {
+ /* max-width: 60%;*/
+    
+}}
+@media screen and (max-width: 450px) {
   .element {
-   /* max-width: 60%;*/
+    /*max-width: 100%;*/
       
   }}
-@media screen and (max-width: 450px) {
-    .element {
-      /*max-width: 100%;*/
-        
-    }}
 
 @media screen and (max-width: 320px) {
-  .element {
-    max-width: 282px;
+.element {
+  max-width: 282px;
 }}
