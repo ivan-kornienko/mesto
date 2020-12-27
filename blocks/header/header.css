@@ -1,0 +1,32 @@
+.header {
+    max-width: 880px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 45px 0px 40px 0px;
+    border-bottom: 1px solid #545454;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header {
+        
+}}
+
+@media screen and (max-width: 900px) {
+    .header {
+        
+        width: 85%;
+    }}
+
+@media screen and (max-width: 700px) {
+    .header {
+        /*width: 60%;*/
+}}
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 28px 0px 30px 0px;
+        
+}} 

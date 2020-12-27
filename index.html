@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Mesto">
+     <meta name="keywords" content="Путешествия, Жак-Ив Кусто, Исследователь океана, Карачевск, Эльбрус, Домбай">
+     <meta name="author" content="Иван Корниенко">
+     <link rel="stylesheet" href="./pages/index.css">
+     <title>Mesto</title>
+</head>
+<body>
+    <div class="page">
+        <div class="popup popup_opened">
+            <button class="popup__close"></button>
+            <div class="popup__container">
+                <form class="popup__form">
+                    <h3 class="popup__title">Редактировать профиль</h3>
+                    <input class="popup__field-name" type="text" value="Жак-Ив Кусто"/>
+                    <input class="popup__field-caption" type="text" value="Исследователь океана"/>
+                    <input class="popup__submit-button" type="submit" value="Сохранить"/>
+                </form>
+            </div>
+        </div>
+        <header class="header">
+             <div class="header__logo"></div>
+             <div class="header__line"></div>
+        </header>
+        <main class="content">
+            <section class="profile">
+                <div class="avatar"></div>
+                <div class="profile-info">
+                    <h1 class="profile-info__title">Жак-Ив Кусто</h1>
+                    <button class="edit-button"></button>
+                    <p class="profile-info__subtitle">Исследователь океана</p>
+                    
+                </div>
+                <div class="add-button">
+                    <div class="add-button__icon"></div>
+                </div>
+            </section>
+
+            <section class="elements">
+
+                <div class="element">
+                    <img class="element__image" src="./blocks/element/element__image-karachevsk.jpg" alt="фото Карачаевск">
+                    <div class="element__title">
+                        <h2 class="heading heading_size_m">Карачаевск</h2>
+                        <button class="fovorite-button"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img class="element__image" src="./blocks/element/element__image-elbrus.jpg" alt="фото Эльбрус">
+                    <div class="element__title">
+                        <h2 class="heading heading_size_m">Гора Эльбрус</h2>
+                        <button class="fovorite-button"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img class="element__image" src="./blocks/element/element__image-dombay.jpg" alt="фото Домбай">
+                    <div class="element__title">
+                        <h2 class="heading heading_size_m">Домбай</h2>
+                        <button class="fovorite-button"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img class="element__image" src="./blocks/element/element__image-elbrus.jpg" alt="фото Эльбрус">
+                    <div class="element__title">
+                        <h2 class="heading heading_size_m">Гора Эльбрус</h2>
+                        <button class="fovorite-button"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img class="element__image" src="./blocks/element/element__image-dombay.jpg" alt="фото Домбай">
+                    <div class="element__title">
+                        <h2 class="heading heading_size_m">Домбай</h2>
+                        <button class="fovorite-button"></button>
+                    </div>
+                </div>
+                <div class="element">
+                    <img class="element__image" src="./blocks/element/element__image-karachevsk.jpg" alt="фото Карачаевск">
+                    <div class="element__title">
+                        <h2 class="heading heading_size_m">Карачаево-Черкесская Руспублика</h2>
+                        <button class="fovorite-button"></button>
+                    </div>
+                </div>
+                
+            </section> 
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">&#169; 2020 Mesto Russia</p>
+        </footer>
+     </div>
+     <script src="./script/script.js"></script>
+</body>
+</html>

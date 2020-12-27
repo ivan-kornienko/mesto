@@ -1,0 +1,11 @@
+.element__title {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2;
+  margin: 25px 20px 25px 20px;
+
+  align-self: flex-start;
+}

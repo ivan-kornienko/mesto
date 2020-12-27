@@ -1,0 +1,50 @@
+.add-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    justify-self: end;
+    align-self: center;
+    background-image: url(./add.svg);
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    
+    transition: opacity 0.5s ease;
+
+    outline: 0;
+
+    box-sizing: border-box;
+
+}
+
+.add-button:hover {
+    opacity: 0.6;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .add-button {
+        max-width: 60%;
+    }}
+
+@media screen and (max-width: 700px) {
+    .add-button {
+        
+}}
+
+
+@media screen and (max-width: 500px) {
+    .add-button {
+    
+
+        max-width: 282px;
+    
+}} 

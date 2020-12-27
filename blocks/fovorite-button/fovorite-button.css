@@ -1,0 +1,31 @@
+.fovorite-button {
+    display: inline-block;
+
+    width: 20px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+
+    background: white;
+    background-image: url(./fovorite.svg);
+    background-size: cover;
+    border: none;
+
+    cursor: pointer;
+    
+    transition: opacity 0.5s ease;
+
+    outline: 0;
+}
+
+.fovorite-button:hover,
+.fovorite-button:focus {
+    opacity: 0.5;
+}
+
+
+.fovorite-button:active {
+    background-image: url(./fovorite-active.svg);
+    background-size: cover;
+    opacity: 1;
+}

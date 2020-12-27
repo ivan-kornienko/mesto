@@ -1,0 +1,6 @@
+.edit-button__icon {
+    background-image: url(./edit.svg);
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+}
