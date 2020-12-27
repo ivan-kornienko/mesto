@@ -8,7 +8,7 @@
 
 **О проекте**
 
-* [Ссылка на ghpages](https://www.figma.com/file/StZjf8HnoeLdiXS7dYrLAh/JavaScript.-Sprint-4)
+* [Ссылка на ghpages](https://ivan-kornienko.github.io/mesto/)
 
 **Используемые технологии**
 
