@@ -8,31 +8,24 @@
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     padding: 66px 0px 60px 0px;
-}.footer > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-@media screen and (max-width: 1024px) {
-    .header {
-        
-}}
-
 @media screen and (max-width: 900px) {
     .footer {
-        
         width: 85%;
-    }}
+    }
+}
 
 @media screen and (max-width: 700px) {
     .footer {
-       
-}}
+    }
+}
 
 @media screen and (max-width: 320px) {
     .footer {
         max-width: 282px;
         padding: 48px 0px 36px 0px;
-        
-    
-}} 
+    }
+}

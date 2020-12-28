@@ -24,10 +24,10 @@
 }
 
 .popup__close:hover {
-opacity: 0.6;
+    opacity: 0.6;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
     .popup__close {
         -ms-grid-column: 1;
         grid-column: 1;
@@ -36,7 +36,7 @@ opacity: 0.6;
         width: 26px;
         height: 26px;
         -ms-grid-column-align: end;
-            justify-self: end;
-        
-    
-}} 
+        justify-self: end;
+        margin-right: 6%;
+    }
+}

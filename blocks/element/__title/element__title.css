@@ -1,22 +1,22 @@
 .element__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-direction: row;
-        flex-direction: row;
--webkit-box-pack: justify;
+    flex-direction: row;
+    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-        justify-content: space-between;
--webkit-box-align: center;
+    justify-content: space-between;
+    -webkit-box-align: center;
     -ms-flex-align: center;
-        align-items: center;
--ms-grid-column: 1;
-grid-column: 1;
--ms-grid-row: 2;
-grid-row: 2;
-margin: 25px 20px 25px 20px;
+    align-items: center;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin: 25px 20px 25px 20px;
 
-align-self: flex-start;
+    align-self: flex-start;
 }

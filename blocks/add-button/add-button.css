@@ -5,10 +5,10 @@
     height: 50px;
     border: 2px solid white;
     -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     background-image: url(./add.svg);
     background-size: 22px;
     background-position: center;
@@ -18,42 +18,32 @@
     margin: 0;
 
     cursor: pointer;
-    
+
     -webkit-transition: opacity 0.5s ease;
-    
+
     -o-transition: opacity 0.5s ease;
-    
+
     transition: opacity 0.5s ease;
 
     outline: 0;
 
     -webkit-box-sizing: border-box;
 
-            box-sizing: border-box;
-
+    box-sizing: border-box;
 }
 
 .add-button:hover {
     opacity: 0.6;
 }
 
-
-
 @media screen and (max-width: 900px) {
     .add-button {
         max-width: 60%;
-    }}
-
-@media screen and (max-width: 700px) {
-    .add-button {
-        
-}}
-
+    }
+}
 
 @media screen and (max-width: 500px) {
     .add-button {
-    
-
         max-width: 282px;
-    
-}} 
+    }
+}

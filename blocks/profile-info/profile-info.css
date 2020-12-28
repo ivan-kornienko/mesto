@@ -7,39 +7,33 @@
     grid-template-rows: auto;
     gap: 10px 18px;
     -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     -ms-grid-row-align: center;
-        align-self: center;
-}.profile-info > *:nth-child(1) {
+    align-self: center;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-
-
 @media screen and (max-width: 900px) {
     .profile-info {
-        
-        
-    }}
+    }
+}
 
 @media screen and (max-width: 790px) {
     .profile-info {
-        
-}}
+    }
+}
 
 @media screen and (max-width: 700px) {
     .profile-info {
-        
-}}
-
-
+    }
+}
 
 @media screen and (max-width: 320px) {
     .profile-info {
         -ms-grid-rows: 26px 10px 14px;
         grid-template-rows: 26px 14px;
         gap: 10px 14px;
-    
-}} 
+    }
+}
