@@ -1,4 +1,4 @@
-.add-button {
+.profile__add-button {
     display: inline-block;
     width: 100%;
     max-width: 150px;
@@ -13,6 +13,7 @@
     background-size: 22px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
 
     padding: 0;
     margin: 0;
@@ -32,18 +33,12 @@
     box-sizing: border-box;
 }
 
-.add-button:hover {
+.profile__add-button:hover {
     opacity: 0.6;
 }
 
 @media screen and (max-width: 900px) {
-    .add-button {
-        max-width: 60%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .add-button {
+    .profile__add-button {
         max-width: 282px;
     }
 }

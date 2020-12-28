@@ -17,11 +17,15 @@
 
 @media screen and (max-width: 900px) {
     .profile-info {
+        
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 900px) {
     .profile-info {
+        width: 88%;
+        grid-template-columns: 1fr auto 1fr ;
+        grid-template-rows: auto;
     }
 }
 
@@ -32,8 +36,8 @@
 
 @media screen and (max-width: 320px) {
     .profile-info {
-        -ms-grid-rows: 26px 10px 14px;
+       /* -ms-grid-rows: 26px 10px 14px;
         grid-template-rows: 26px 14px;
-        gap: 10px 14px;
+        gap: 10px 14px;*/
     }
 }

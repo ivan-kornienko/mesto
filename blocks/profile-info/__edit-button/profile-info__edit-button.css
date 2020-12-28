@@ -1,4 +1,4 @@
-.edit-button {
+.profile-info__edit-button {
     display: inline-block;
 
     width: 24px;
@@ -28,12 +28,19 @@
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
-.edit-button:hover {
+.profile-info__edit-button:hover {
     opacity: 0.6;
 }
 
+@media screen and (max-width: 900px) {
+    .profile-info__edit-button {
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
+
 @media screen and (max-width: 320px) {
-    .edit-button {
+    .profile-info__edit-button {
         width: 18px;
         height: 18px;
     }

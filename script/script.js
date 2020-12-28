@@ -1,9 +1,9 @@
-let editButton = document.querySelector('.edit-button');
+let editButton = document.querySelector('.profile-info__edit-button');
 let popup = document.querySelector('.popup');
 let closeButton = document.querySelector('.popup__close');
 let formElement = document.querySelector('.popup__form');
-let formName = document.querySelector('.popup__field-name');
-let formCaption = document.querySelector('.popup__field-caption');
+let formName = document.querySelector('[name="name"]');
+let formCaption = document.querySelector('[name="caption"]');
 let userName = document.querySelector('.profile-info__title');
 let userCaption = document.querySelector('.profile-info__subtitle');
 

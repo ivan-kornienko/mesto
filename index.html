@@ -13,30 +13,26 @@
     <div class="page">
         <div class="popup popup_opened">
             <button class="popup__close"></button>
-                <form class="popup__form">
+                <form class="popup__form" name="popup">
                     <h3 class="popup__title">Редактировать профиль</h3>
-                    <input class="popup__field-name" type="text" value="Жак-Ив Кусто"/>
-                    <input class="popup__field-caption" type="text" value="Исследователь океана"/>
+                    <input class="popup__field" name="name" type="text" value="Жак-Ив Кусто"/>
+                    <input class="popup__field" name="caption" type="text" value="Исследователь океана"/>
                     <input class="popup__submit-button" type="submit" value="Сохранить"/>
                 </form>
-            
         </div>
         <header class="header">
-             <div class="header__logo"></div>
-             <div class="header__line"></div>
+             <img class="header__logo" src="./blocks/header/__logo/header__logo.svg">
         </header>
         <main class="content">
             <section class="profile">
-                <div class="avatar"></div>
+                <img class="avatar" src="./blocks/avatar/avatar.jpg">
                 <div class="profile-info">
                     <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-                    <button class="edit-button"></button>
+                    <button class="profile-info__edit-button"></button>
                     <p class="profile-info__subtitle">Исследователь океана</p>
                     
                 </div>
-                <div class="add-button">
-                    <div class="add-button__icon"></div>
-                </div>
+                <button class="profile__add-button"></button>
             </section>
 
             <section class="elements">
@@ -44,43 +40,43 @@
                 <div class="element">
                     <img class="element__image" src="./blocks/element/element__image-karachevsk.jpg" alt="фото Карачаевск">
                     <div class="element__title">
-                        <h2 class="heading heading_size_m">Карачаевск</h2>
-                        <button class="fovorite-button"></button>
+                        <h2 class="element__heading">Карачаевск</h2>
+                        <button class="element__fovorite-button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="./blocks/element/element__image-elbrus.jpg" alt="фото Эльбрус">
                     <div class="element__title">
-                        <h2 class="heading heading_size_m">Гора Эльбрус</h2>
-                        <button class="fovorite-button"></button>
+                        <h2 class="element__heading">Гора Эльбрус</h2>
+                        <button class="element__fovorite-button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="./blocks/element/element__image-dombay.jpg" alt="фото Домбай">
                     <div class="element__title">
-                        <h2 class="heading heading_size_m">Домбай</h2>
-                        <button class="fovorite-button"></button>
+                        <h2 class="element__heading">Домбай</h2>
+                        <button class="element__fovorite-button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="./blocks/element/element__image-elbrus.jpg" alt="фото Эльбрус">
                     <div class="element__title">
-                        <h2 class="heading heading_size_m">Гора Эльбрус</h2>
-                        <button class="fovorite-button"></button>
+                        <h2 class="element__heading">Гора Эльбрус</h2>
+                        <button class="element__fovorite-button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="./blocks/element/element__image-dombay.jpg" alt="фото Домбай">
                     <div class="element__title">
-                        <h2 class="heading heading_size_m">Домбай</h2>
-                        <button class="fovorite-button"></button>
+                        <h2 class="element__heading">Домбай</h2>
+                        <button class="element__fovorite-button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img class="element__image" src="./blocks/element/element__image-karachevsk.jpg" alt="фото Карачаевск">
                     <div class="element__title">
-                        <h2 class="heading heading_size_m">Карачаево-Черкесская Руспублика</h2>
-                        <button class="fovorite-button"></button>
+                        <h2 class="element__heading">Карачаево-Черкесская Руспублика</h2>
+                        <button class="element__fovorite-button"></button>
                     </div>
                 </div>
                 

@@ -1,7 +1,7 @@
 .header__logo {
     width: 142px;
     height: 33px;
-    background-image: url(./header__logo.svg);
+    /* background-image: url(./header__logo.svg);*/
     -webkit-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
@@ -12,7 +12,10 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
     .header__logo {
+        margin-left: 8.4%;
+        width: 104px;
+        height: 24px;
     }
 }

@@ -13,11 +13,14 @@
 
 @media screen and (max-width: 900px) {
     .profile-info__title {
+        
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 900px) {
     .profile-info__title {
+        grid-column: 2;
+        grid-row: 1;
         text-align: center;
     }
 }

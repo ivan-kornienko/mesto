@@ -11,8 +11,11 @@
     grid-row: 2;
 }
 
-@media screen and (max-width: 790px) {
+
+@media screen and (max-width: 900px) {
     .profile-info__subtitle {
+        grid-column: 2;
+        grid-row: 2;
         text-align: center;
     }
 }
