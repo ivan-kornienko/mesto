@@ -15,11 +15,6 @@
     -ms-grid-column: 1;
 }
 
-@media screen and (max-width: 900px) {
-    .profile-info {
-        
-    }
-}
 
 @media screen and (max-width: 900px) {
     .profile-info {
@@ -29,10 +24,6 @@
     }
 }
 
-@media screen and (max-width: 700px) {
-    .profile-info {
-    }
-}
 
 @media screen and (max-width: 320px) {
     .profile-info {
