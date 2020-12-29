@@ -19,7 +19,7 @@
 @media screen and (max-width: 900px) {
     .profile-info {
         width: 88%;
-        grid-template-columns: 1fr auto 1fr ;
+        grid-template-columns: 1fr auto 1fr;
         grid-template-rows: auto;
     }
 }
