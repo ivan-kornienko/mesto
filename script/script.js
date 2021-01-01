@@ -9,14 +9,14 @@ let userCaption = document.querySelector('.profile-info__subtitle');
 
 // открытие попапа
 function openPopup () {
-    popup.classList.remove('popup_opened');
+    popup.classList.add('popup_opened');
     formName.setAttribute ('value', userName.textContent);
     formCaption.setAttribute ('value', userCaption.textContent);  
 }
 
 // закрытие попапа
 function closePopup () {
-    popup.classList.add('popup_opened');
+    popup.classList.remove('popup_opened');
     formElement.reset ();
 }
 
