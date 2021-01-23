@@ -20,13 +20,6 @@
     outline: 0;
 }
 
-.element__fovorite-button:hover,
-.element__fovorite-button:focus {
+.element__fovorite-button:hover,{
     opacity: 0.5;
-}
-
-.element__fovorite-button:active {
-    background-image: url(./fovorite-active.svg);
-    background-size: cover;
-    opacity: 1;
 }

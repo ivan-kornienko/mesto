@@ -45,6 +45,8 @@
 @import url(../blocks/element/__image/element__image.css);
 @import url(../blocks/element/__fovorite-button/element__fovorite-button.css);
 @import url(../blocks/element/__heading/heading.css);
+@import url(../blocks/element/__fovorite-button/_active/element__fovorite-button_active.css);
+@import url(../blocks/element/__delete/element__delete.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);
