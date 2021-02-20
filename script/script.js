@@ -8,6 +8,8 @@ const formCaption = document.querySelector('[name="caption"]');
 const userName = document.querySelector('.profile-info__title');
 const userCaption = document.querySelector('.profile-info__subtitle');
 
+
+
 // открытие попапа Edit
 function openPopup () {
   popupEdit.classList.add ('popup_type_edit');
@@ -36,6 +38,7 @@ editButton.addEventListener('click', openPopup);
 closeButtonEdit.addEventListener('click', closePopup);
 formElement.addEventListener('submit', handleFormSubmit);
 
+
 // попап New-card
 
 const addButtonNewCard = document.querySelector('.profile__add-button');
@@ -50,6 +53,8 @@ const newCardLink = document.querySelector('.element__image');
 // открытие попапа New-card
 function openPopupNewCard () {
   popupNewCard.classList.add ('popup_type_new-card');
+  formNameNewCard.setAttribute ('value', 'Название');
+  formLinkNewCard.setAttribute ('value', 'Ссылка на картинку');
 }
 
 // закрытие попапа New-card
