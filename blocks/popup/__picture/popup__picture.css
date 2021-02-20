@@ -1,0 +1,18 @@
+.popup__picture {
+    /*object-fit: cover;*/
+    object-fit: scale-down;
+
+    max-width: 820px;
+    max-height: 540px;
+
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 900px) {
+    .popup__picture {
+        width: 100%;
+    }
+}

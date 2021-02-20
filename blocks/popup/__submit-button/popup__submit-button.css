@@ -22,8 +22,7 @@
     display: inline-block;
 }
 
-.popup__submit-button:hover,
-.popup__submit-button:focus {
+.popup__submit-button:hover {
     opacity: 0.8;
 }
 

@@ -20,6 +20,6 @@
     outline: 0;
 }
 
-.element__fovorite-button:hover,{
+.element__fovorite-button:hover{
     opacity: 0.5;
 }

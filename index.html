@@ -11,24 +11,35 @@
 </head>
 <body>
     <div class="page">
-        <div class="popup">
-            <button class="popup__close" type="button"></button>
-                <form class="popup__form" name="popup">
-                    <h3 class="popup__title">Редактировать профиль</h3>
-                    <input class="popup__field" name="name" type="text" value="Жак-Ив Кусто"/>
-                    <input class="popup__field" name="caption" type="text" value="Исследователь океана"/>
-                    <input class="popup__submit-button" type="submit" value="Сохранить"/>
-                </form>
+        <div class="popup" id="popup_type_edit">
+            <div class="popup__container">
+              <button class="popup__close" type="button"></button>
+              <form class="popup__form" name="popup-edit">
+                   <h3 class="popup__title">Редактировать профиль</h3>
+                   <input class="popup__input" name="name" type="text" value="Жак-Ив Кусто"/>
+                   <input class="popup__input" name="caption" type="text" value="Исследователь океана"/>
+                   <input class="popup__submit-button" type="submit" value="Сохранить"/>
+              </form>
+           </div>
         </div>
-        <!--<div class="popup-add-place">
-            <button class="popup-add-place__close" type="button"></button>
-                <form class="popup-add-place__form" name="popup">
-                    <h3 class="popup-add-place__title">Новое место</h3>
-                    <input class="popup-add-place__field" name="name" type="text" value="Название"/>
-                    <input class="popup-add-place__field" name="caption" type="text" value="Ссылка на картинку"/>
-                    <input class="popup-add-place__submit-button" type="submit" value="Создать"/>
+       <div class="popup" id="popup_type_new-card">
+         <div class="popup__container">
+            <button class="popup__close" type="button"></button>
+                <form class="popup__form" name="popup-new-card">
+                    <h3 class="popup__title">Новое место</h3>
+                    <input class="popup__input" name="place-name" type="text" value="Название"/>
+                    <input class="popup__input" name="place-link" type="url" value="Ссылка на картинку"/>
+                    <input class="popup__submit-button" type="submit" value="Создать"/>
                 </form>
-        </div>-->
+           </div>
+        </div>
+        <div class = "popup" id="popup_type_image">
+            <div class="popup__container">
+                <button class="popup__close" type="button"></button>
+                <img class="popup__picture" src = "" alt="">
+                <p class="popup__caption"></p>
+            </div>
+        </div>
         <header class="header">
              <img class="header__logo" src="./blocks/header/__logo/header__logo.svg" alt="логотип Место">
         </header>
