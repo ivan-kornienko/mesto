@@ -1,5 +1,5 @@
 .popup__input {
-    color: #C4C4C4;
+    
     font-family: inherit;
     font-size: 14px;
     font-style: normal;
@@ -14,5 +14,9 @@
     border: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
+}
+
+.popup__input:placeholder-shown {
+    color: #C4C4C4;
 }
 

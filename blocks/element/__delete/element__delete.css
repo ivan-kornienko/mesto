@@ -1,7 +1,7 @@
 .element__delete {
     width: 18px;
     height: 19px;
-    background-image: url(./element__delete.svg);
+    background-image: url(../../../images/delete.svg);
     background-size: cover;
     -ms-grid-column: 1;
   grid-column: 1;
