@@ -65,8 +65,6 @@ function openPopupCard () {
 // Очистить попап
 function cleanPopupCard () {
   formElementCard.reset();
-  //formNameCard.setAttribute ('value', 'Название');
-  //formLinkCard.setAttribute ('value', 'Ссылка на картинку');
 }
 // Сабмит формы
 function submitCard (evt) {
