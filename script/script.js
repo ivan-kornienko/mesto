@@ -1,10 +1,12 @@
+// Общие Переменные
+const overlayList = Array.from(document.querySelectorAll('.popup__overlay'));
 // Переменные Edit 
 const popupEdit = document.getElementById('popup_type_edit');
 const closeButtonEdit = popupEdit.querySelector('.popup__close');
 const editButton = document.querySelector('.profile-info__edit-button');
-const formElement = popupEdit.querySelector('.popup__form');
-const formName = document.querySelector('[name="name"]');
-const formCaption = document.querySelector('[name="caption"]');
+const formElementEdit = popupEdit.querySelector('.popup__form');
+const inputName = document.querySelector('[name="name"]');
+const inputCaption = document.querySelector('[name="caption"]');
 const userName = document.querySelector('.profile-info__title');
 const userCaption = document.querySelector('.profile-info__subtitle');
 // Переменные Card 
@@ -12,8 +14,8 @@ const addButtonCard = document.querySelector('.profile__add-button');
 const popupCard = document.getElementById('popup_type_new-card');
 const closeButtonCard = popupCard.querySelector('.popup__close');
 const formElementCard = popupCard.querySelector('.popup__form');
-const formNameCard = document.querySelector('[name="place-name"]');
-const formLinkCard = document.querySelector('[name="place-link"]');
+const inputNameCard = document.querySelector('[name="place-name"]');
+const inpitLinkCard = document.querySelector('[name="place-link"]');
 const wrap = document.querySelector('.elements');
 const elementTemplate = document.querySelector('.element_template').content;
 //Переменные Image
@@ -23,30 +25,85 @@ const picture = popupImage.querySelector('.popup__picture');
 const caption = popupImage.querySelector('.popup__caption');
 
 
-
-/// Функции общие
+/// ОБЩИЕ ФУНКЦИИ
 // Тоггл попапов
-function toggleModal (el) {
-  el.classList.toggle ('popup_type_opend');
+function toggleModal (popup) {
+  popup.classList.toggle ('popup_type_opend');
+  clearForm (popup);
+  toggleListener();
+  handlePopupOverlay();
 }
+
+// Очистить форму от спанов с ошибками
+function clearForm (popup) {
+  const errorList = Array.from(popup.querySelectorAll('.popup__input-error'));
+  errorList.forEach((errorElement) => {
+    errorElement.textContent = '';
+  });
+  const inputErrorList = Array.from(popup.querySelectorAll('.popup__input_type_error'));
+  inputErrorList.forEach((inputErrorElement) => {
+    inputErrorElement.classList.remove('popup__input_type_error');
+  });
+}
+
+// Закрыть попап при клике на оверлей
+const handlePopupOverlay = () => {
+  overlayList.forEach((overlay) => {
+    overlay.addEventListener('click', () => {
+      closePopup();
+    });
+  });
+}
+// Закрыть попап при нажатии Escape
+const handleEsc = () => {
+  toggleModal (popupOpend);
+}
+
+// Тоггл лисенеров при нажатии Escape
+const toggleListener = () => {
+  const popupOpend = document.querySelector('.popup_type_opend');
+  if (!popupOpend) {
+    document.removeEventListener('keydown', (evt) => {
+      if (evt.key === "Escape") {
+        closePopup(popupOpend);
+      }
+    })
+  }
+  else {
+    document.addEventListener('keydown', (evt) => {
+      if (evt.key === "Escape") {
+        closePopup(popupOpend);
+      }
+    })
+  }
+}
+
+// Закрыть любой открытый попап
+const closePopup = () => {
+  const popupOpend = document.querySelector('.popup_type_opend');
+  if (popupOpend) {
+    popupOpend.classList.remove ('popup_type_opend');
+  }
+}
+
 // Вставить карточку в разметку
 function renderCard(data, wrap) {
   wrap.prepend(createElement(data));
 }
 
 
-/// Функции попапа Edit
+/// ФУНКЦИИ ПОПАПА EDIT
 // Синхронизация формы
 function syncFormEdit () {
-  formElement.reset();
-  formName.value = userName.textContent;
-  formCaption.value = userCaption.textContent;
+  formElementEdit.reset();
+  inputName.value = userName.textContent;
+  inputCaption.value = userCaption.textContent;
 } 
 // Синхронизация профиля пользователя
 function submitEdit (evt) {
   evt.preventDefault();
-  userName.textContent = formName.value;
-  userCaption.textContent = formCaption.value;
+  userName.textContent = inputName.value;
+  userCaption.textContent = inputCaption.value;
   toggleModal (popupEdit);
 }
 // Открыть попап
@@ -70,8 +127,8 @@ function cleanPopupCard () {
 function submitCard (evt) {
   evt.preventDefault();
   renderCard({
-   name: formNameCard.value,
-   link: formLinkCard.value
+   name: inputNameCard.value,
+   link: inpitLinkCard.value
  }, wrap);
  toggleModal (popupCard);
 }
@@ -100,9 +157,7 @@ function handleLike(evt) {
   evt.target.classList.toggle("element__fovorite-button_active");
 } 
 
-
-
-/// Функции попапа Image
+/// ФУНКЦИИ ПОПАПА IMAGE
 // Открытие попапа
 function openPopupImage (data) {
   toggleModal (popupImage);
@@ -111,21 +166,17 @@ function openPopupImage (data) {
   picture.alt = data.name;
 }
 
-
-
-//// Слушатели
-// Edit popup 
+//// СЛУШАТЕЛИ
+// Поап Edit 
 editButton.addEventListener('click', openPopupEdit);
 closeButtonEdit.addEventListener('click', () => toggleModal (popupEdit));
-formElement.addEventListener('submit', submitEdit);
-// Card popup 
+formElementEdit.addEventListener('submit', submitEdit);
+// Поап Card 
 addButtonCard.addEventListener('click', openPopupCard);
 closeButtonCard.addEventListener('click', () => toggleModal (popupCard));
 formElementCard.addEventListener('submit', submitCard);
-// Image popup 
+// Поап Image 
 closeButtonImage.addEventListener('click', () => toggleModal (popupImage));
-
-
 
 
 // Инициализация

@@ -1,5 +1,4 @@
 .popup__input {
-    
     font-family: inherit;
     font-size: 14px;
     font-style: normal;
@@ -20,3 +19,6 @@
     color: #C4C4C4;
 }
 
+.popup__input:focus {
+    outline: none;
+}
