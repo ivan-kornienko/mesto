@@ -34,13 +34,6 @@ function closePopup (popup) {
   popup.classList.remove ('popup_type_opend');
   document.removeEventListener('keydown', closeByEscape);
 }
-// Закрыть попап нажатием ESC
-function closeByEscape(evt) {
-  const openedPopup = document.querySelector('.popup_type_opened');
-  if (evt.key === 'Escape') {
-    closePopup(openedPopup);
-  }
-}
 // Очистить форму от спанов с ошибками
 function clearForm (popup) {
   const errorList = Array.from(popup.querySelectorAll('.popup__input-error'));
@@ -52,11 +45,17 @@ function clearForm (popup) {
     inputErrorElement.classList.remove('popup__input_type_error');
   });
 }
+// Закрыть попап нажатием ESC
+function closeByEscape(evt) {
+  if (evt.key === 'Escape') {
+    const openedPopup = document.querySelector('.popup_type_opend');
+    closePopup(openedPopup);
+  }
+}
 // Вставить карточку в разметку
 function renderCard(data, wrap) {
   wrap.prepend(createElement(data));
 }
-
 
 
 /// ФУНКЦИИ ПОПАПА EDIT
@@ -144,7 +143,7 @@ function openPopupImage (data) {
 // Общие 
 popups.forEach((popup) => {
   popup.addEventListener('click', (evt) => {
-      if (evt.target.classList.contains('popup__overlay')) {
+      if (evt.target.classList.contains('popup_type_opend')) {
         closePopup(popup)
       }
       if (evt.target.classList.contains('popup__close')) {
