@@ -31,6 +31,14 @@ const isValid = (formElement, inputElement, config) => {
     const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
     const buttonElement = formElement.querySelector('.' + config.submitButtonSelector);
   
+    formElement.addEventListener('submit', (evt) => {
+      // У каждой формы отменим стандартное поведение
+      evt.preventDefault();
+      buttonElement.setAttribute("disabled", "disabled");
+      buttonElement.classList.add(config.inactiveButtonClass);
+      buttonElement.classList.remove(config.submitButtonSelector);
+    });
+
     // Вызовем toggleButtonState, чтобы не ждать ввода данных в поля
     toggleButtonState(inputList, buttonElement, config);
   
@@ -64,6 +72,7 @@ const isValid = (formElement, inputElement, config) => {
       // Для каждой формы вызовем функцию setEventListeners,
       // передав ей элемент формы
       setEventListeners(formElement, config);
+  //}
     });
   };
   

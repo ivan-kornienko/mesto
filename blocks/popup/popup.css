@@ -16,8 +16,8 @@
     opacity: 0;
     transition: visibility 0.4s, opacity 0.4s linear;
 }
-/*
-.popup::after {
+
+/*.popup::after {
     content: "";
     position: absolute;
     top: 0;
@@ -27,6 +27,6 @@
     display: block;
     background: black;
     opacity: 0.5;
-    z-index: -1;
+    
 }*/
 
